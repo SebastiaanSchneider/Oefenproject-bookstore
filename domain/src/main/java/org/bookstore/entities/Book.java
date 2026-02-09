@@ -17,12 +17,11 @@ import java.util.UUID;
 @Entity
 @Getter
 @RequiredArgsConstructor
-@Table(name = "catalogue")
+@Table(name = "books")
 public class Book {
 
     @Id
     @GeneratedValue
-    @Column(updatable = false, nullable = false)
     private UUID id;
 
     @Column(nullable = false, length = 17)
@@ -32,7 +31,7 @@ public class Book {
     private String title;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "authorId", nullable = false)
+    @JoinColumn(name = "author_id", nullable = false)
     private Author author;
 
     @Column(nullable = false)

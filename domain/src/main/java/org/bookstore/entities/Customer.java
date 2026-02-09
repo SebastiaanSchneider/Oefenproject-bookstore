@@ -38,6 +38,6 @@ public class Customer {
     @Column
     private String address;
 
-    @OneToMany(mappedBy = "orders")
+    @OneToMany(mappedBy = "customer")
     private List<Order> orders = new ArrayList<>();
 }

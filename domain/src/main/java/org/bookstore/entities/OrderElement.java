@@ -2,21 +2,20 @@ package org.bookstore.entities;
 
 import jakarta.persistence.*;
 
-import java.util.UUID;
-
 @Entity
+@Table(name = "order_items")
 public class OrderElement {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "orderId", nullable = false)
+    @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "bookId", nullable = false)
+    @JoinColumn(name = "book_id", nullable = false)
     private Book book;
 
     @Column(nullable = false)

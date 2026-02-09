@@ -4,9 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.bookstore.daos.CatalogueRepository;
 import org.bookstore.dtos.BookDTO;
-import org.bookstore.entities.Book;
 import org.bookstore.mappers.BookMapper;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

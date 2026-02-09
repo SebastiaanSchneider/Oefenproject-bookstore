@@ -10,14 +10,13 @@ import org.bookstore.enums.OrderStatus;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderDTO {
     @NotNull
-    private UUID id;
+    private long id;
 
     @NotNull
     private CustomerDTO customer;
@@ -29,5 +28,5 @@ public class OrderDTO {
     @NotNull
     private LocalDate createdAt;
 
-    private List<OrderElementDTO> inventoryItems = new ArrayList<>();
+    private List<org.bookstore.dtos.OrderElementDTO> inventoryItems = new ArrayList<>();
 }
