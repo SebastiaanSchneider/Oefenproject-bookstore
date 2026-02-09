@@ -3,7 +3,7 @@ package org.bookstore.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "order_items")
+@Table(name = "order_elements")
 public class OrderElement {
 
     @Id
