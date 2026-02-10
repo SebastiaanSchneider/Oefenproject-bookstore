@@ -1,6 +1,6 @@
 package org.bookstore.dtos;
 
-import org.jetbrains.annotations.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class AuthorDTO {
     @NotNull
-    private Long id;
+    private long id;
 
     @NotNull
     private String firstName;

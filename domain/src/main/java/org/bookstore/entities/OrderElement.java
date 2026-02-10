@@ -1,8 +1,12 @@
 package org.bookstore.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
+@RequiredArgsConstructor
 @Table(name = "order_elements")
 public class OrderElement {
 

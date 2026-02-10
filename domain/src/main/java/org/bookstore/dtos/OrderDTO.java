@@ -28,5 +28,5 @@ public class OrderDTO {
     @NotNull
     private LocalDate createdAt;
 
-    private List<org.bookstore.dtos.OrderElementDTO> inventoryItems = new ArrayList<>();
+    private List<OrderElementDTO> inventoryItems = new ArrayList<>();
 }

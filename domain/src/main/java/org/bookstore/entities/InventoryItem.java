@@ -1,8 +1,7 @@
 package org.bookstore.entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -11,6 +10,7 @@ import java.util.UUID;
  */
 @Entity
 @Getter
+@Setter
 @RequiredArgsConstructor
 @Table(name = "inventory")
 public class InventoryItem {

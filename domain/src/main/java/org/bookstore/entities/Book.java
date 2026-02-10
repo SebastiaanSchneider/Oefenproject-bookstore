@@ -1,9 +1,7 @@
 package org.bookstore.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.bookstore.enums.BookFormat;
 import org.bookstore.enums.Genre;
 
@@ -13,9 +11,9 @@ import java.util.UUID;
 /**
  * Entity representing a book
  */
-@Data
 @Entity
 @Getter
+@Setter
 @RequiredArgsConstructor
 @Table(name = "books")
 public class Book {

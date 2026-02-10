@@ -15,7 +15,7 @@ public class OrderElementDTO {
 
     @NotNull
     @Valid
-    private org.bookstore.dtos.OrderDTO order;
+    private OrderDTO order;
 
     @NotNull
     @Valid
