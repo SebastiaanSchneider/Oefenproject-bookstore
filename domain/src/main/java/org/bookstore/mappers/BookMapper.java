@@ -2,7 +2,6 @@ package org.bookstore.mappers;
 
 import org.bookstore.dtos.BookDTO;
 import org.bookstore.entities.Book;
-import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

@@ -1,9 +1,7 @@
 package org.bookstore.mappers;
 
 import org.bookstore.dtos.CustomerDTO;
-import org.bookstore.dtos.OrderElementDTO;
 import org.bookstore.entities.Customer;
-import org.bookstore.entities.OrderElement;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
