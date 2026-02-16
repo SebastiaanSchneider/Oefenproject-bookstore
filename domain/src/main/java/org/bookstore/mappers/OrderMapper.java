@@ -5,20 +5,14 @@ import org.bookstore.dtos.OrderElementDTO;
 import org.bookstore.entities.Order;
 import org.bookstore.entities.OrderElement;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface OrderMapper {
+    @Mapping(target = "customer.orders", ignore = true)
     OrderDTO toDTO(Order order);
 
     Order toEntity(OrderDTO orderDto);
-
-    OrderElementDTO toDTO(OrderElement element);
-
-    OrderElement toEntity(OrderElementDTO dto);
-
-    List<OrderElementDTO> toDTO(List<OrderElement> elements);
-
-    List<OrderElement> toEntity(List<OrderElementDTO> dtos);
 }
