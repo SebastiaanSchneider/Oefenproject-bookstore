@@ -6,7 +6,6 @@ import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
 public interface AuthorMapper {
-//    @Mapping(target = "books", ignore = true) // todo not sure
     AuthorDTO toDTO(Author author);
 
     Author toEntity(AuthorDTO authorDto);
